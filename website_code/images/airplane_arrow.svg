@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>airplane arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="One-page-Slider-Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-689.000000, -886.000000)">
+        <g id="Landing-Page" transform="translate(-4.000000, -3.000000)">
+            <g id="airplane-arrow" transform="translate(693.000000, 889.000000)">
+                <g>
+                    <polygon id="Fill-1" fill="#84CDB9" points="31 0 0 31 31 62 62 31"></polygon>
+                    <polygon id="Fill-2" fill="#EEEEEE" points="41 21.1193843 34.3970227 24.4206469 31.0955341 43.2846401 29.208878 24.4206469 22 21 31.0955341 48"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
