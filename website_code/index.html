@@ -11,11 +11,9 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" type="text/css">
-
-
-
   <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
 </head>
@@ -24,7 +22,7 @@
   <div class="main-title">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light  navbar-transparent">
-      <a class="navbar-brand" id="title-name" href="#">Brian Lin</a>
+      <a class="navbar-brand" id="title-name" href="#">brian lin</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -119,7 +117,7 @@
           <div class="row skills-h3">
             <h3>skills</h3>
           </div>
-          <img src="images/bio_brush_flipped.png" style="width:70%; right:60%; bottom:75%; position: absolute; z-index:0">
+          <img src="images/bio_brush_flipped.png" style="width:70%; right:60%; bottom:65%; position: absolute; z-index:0">
 
           <div class="row skills-list">
             <ul>
@@ -144,7 +142,7 @@
     <div class="selected-works-h3">
       <h3>selected works</h3>
     </div>
-    <img src="images/works_brush.png" style="width:30%; left:38%; position:relative; top: 60px">
+    <img src="images/works_brush.png" style="width:30%; left:38%; position:relative; top: 10vh">
 
 
     <main>
@@ -182,8 +180,8 @@
           <h3>Class Project</h3>
         </div>
       </div>
-      <input type="image" class="toggle image-fluid" src="images/airplane_arrow.svg" alt="button" style="height:50px" >
-      <img id="active-main-pic" class="center-block" src="images/work/pictograms/pictograms_all.png" alt="Pictograms All" style="width: 85%; top: 10%; left: 7%; position: relative; box-shadow:0 11px 11px 0 rgba(0,0,0,0)">
+      <a class="arrow yeet toggle"></a>
+      <img class="active-main-pic-center" class="center-block" src="images/work/pictograms/pictograms_all.png" alt="Pictograms All" >
     </div>
 
     <div class="container">
@@ -246,7 +244,57 @@
 </div>
 
 <div class="selected">
-  <div class="active center-block" id="27-cafe">
+
+<div class="active" id="pictograms">
+    <div class="active-rectangle-fill">
+      <div class="active-text-center horizontal-layout">
+        <div style="display: inline-block; text-align: left; left:15%">
+          <h2>27 Cafe</h2>
+          <h3>Branding <br> Poster design</h3></h3>
+        </div>
+      </div>
+      <a class="arrow yeet toggle"></a>
+      <img id="active-main-pic" class="img-responsive" src="images/work/27-cafe/27_cafe_active.jpg" alt="27 Cafe poster" >
+    </div>
+
+    <div class="container">
+      <div class="slider closed" style="top: 0px">
+        <div class="row">
+
+          <div class="col-6 pancakes">
+            <h2>27 Cafe</h2>
+            <h3>BRANDING <br> POSTER DESIGN</h3>
+            <p> 27 Café is a hipster poetry café in Beijing, China popular with younger Chinese. We presented the concept of branding the café after the “Dada” art movement by creating imagery using techniques such as Collage, Readymades, and Photomontages mixed in with poetry presented in a vibrant and quirky way. I was in charge of making a large, vertical poster that would be placed outside to advertise the café. In addition, I helped design the interior by decorating the inside with famous poetry quotes.</p>
+          </div>
+
+
+          <div class="col-6 container-right col-centered">
+            <div class="inside-content">
+              <div class="col-10 col-centered">
+                <div class="selected-text">
+                  <p>These are the versions of the posters I created. I wanted to incorporate an old, nostalgic feel to them while adding the whimsical Dada elements through hand-drawn illustrations and collage. The first version was the one which the client ended up choosing.
+                  </p>
+                  <p>The inside of the cafe would be decorated with the company's branding and poetry quotes on frosted vinyl. <p>
+                </div>
+                <div class="selected-images">
+                  <img src="images/work/27-cafe/27_cafe_v1_mockup.jpg" alt="27 Cafe Version 1">
+                  <img src="images/work/27-cafe/27_cafe_v2_mockup.jpg" alt="27 Cafe Version 2">
+                  <img src="images/work/27-cafe/27_cafe_v3_mockup.jpg" alt="27 Cafe Version 3">
+                  <img src="images/work/27-cafe/27_cafe_interior1.jpg" alt="27 Cafe Interior 1">
+                  <img src="images/work/27-cafe/27_cafe_interior2.jpg" alt="27 Cafe Interior 2">
+                  <img src="images/work/27-cafe/27_cafe_interior3.jpg" alt="27 Cafe Interior 3">
+                  <img src="images/work/27-cafe/27_cafe_interior4.jpg" alt="27 Cafe Interior 4">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--
+ <div class="active center-block" id="27-cafe">
     <div class="col-6" style="height:100%">
       <div class="active-rectangle-fill">
         <div class="active-text vertical-layout">
@@ -257,8 +305,9 @@
         </div>
       </div>
     </div>
+    <a class="arrow yeet toggle"></a>
     <input type="image" class="toggle image-fluid" src="images/airplane_arrow.svg" alt="button" style="height:50px" />
-    <img id="active-main-pic" class="img-responsive" src="images/work/27-cafe/27_cafe_active.jpg" alt="27 Cafe poster" style="width:35%">
+    <img id="active-main-pic" class="img-responsive" src="images/work/27-cafe/27_cafe_active.jpg" alt="27 Cafe poster" style="width:25vw">
 
 
     <div class="container">
@@ -298,7 +347,7 @@
         </div>
       </div>
     </div>
-
+    -->
 
     <div class="inactive" id="27-cafe">
       <div class="inactive-text">
@@ -310,7 +359,6 @@
     </div>
 
   </div>
-
   <div class="next">
     <div class="active" id="webpower">
       <div class="active-rectangle-fill">
@@ -320,8 +368,9 @@
             <h3>Website Design</h3>
           </div>
         </div>
-        <img id="active-main-pic" class="center-block" src="images/work/webpower-asia/webpower_mockup1.jpg" alt="Webpower Mockup" style="width: 50%; top: 28%; left: 25%; position: relative;">
+        <img class="active-main-pic-center" class="center-block" src="images/work/webpower-asia/webpower_mockup1.jpg" alt="Webpower Mockup" style="width: 50%; top: 28%; left:20vw; position: relative;">
       </div>
+      <a class="arrow yeet toggle"></a>
       <img class ="toggle image-fluid" src="images/airplane_arrow.svg" alt="button" style="height:50px">
 
       <div class="container">
@@ -467,11 +516,11 @@
                             <div class="contact">
                               <ul class="list-inline">
 
-                                <li class="contact-item"> <a href="#">linkedin</a></li>
+                                <li class="contact-item"> <a href="https://www.linkedin.com/in/brian-lin-040257139/">linkedin</a></li>
 
-                                <li class="contact-item"> <a href="#">instagram</a> </li>
+                                <li class="contact-item"> <a href="http://instagram.com/b_lin97">instagram</a> </li>
 
-                                <li class="contact-item"> <a href="#">behance</a> </li>
+                                <li class="contact-item"> <a href="https://dribbble.com/blin">behance</a> </li>
                               </ul>
                               <img src="images/social_brush.png">
                             </div>

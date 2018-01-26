@@ -7,12 +7,48 @@ background-color: #EFEFEF;
 
 a{
   color: #393939;
+  text-decoration: none;
 }
 
 a:hover{
   color: #393939;
 }
 
+
+.arrow {
+  position: absolute;
+  z-index: 10;
+  top: 80vh;
+  width: 3vmin;
+  height: 3vmin;
+  background: transparent;
+  border-bottom: .5vmin solid black;
+  border-right: .5vmin solid black;
+  -webkit-box-shadow: 0 0 0 lightgray;
+          box-shadow: 0 0 0 lightgray;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.arrow.yeet {
+  right: 49%;
+  -webkit-transform: translate3d(0, -50%, 0) rotate(45deg);
+          transform: translate3d(0, -50%, 0) rotate(45deg);
+}
+.arrow:hover {
+  border-color: #4dcc86;
+  -webkit-box-shadow: .5vmin .5vmin 0 black;
+          box-shadow: .5vmin .5vmin 0 black;
+}
+.arrow:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-40%, -60%) rotate(45deg);
+          transform: translate(-40%, -60%) rotate(45deg);
+  width: 200%;
+  height: 200%;
+}
 
 .row {
   margin-left: 0px;
@@ -26,8 +62,8 @@ button:focus, input:focus{
 }
 
 .navbar-brand{
-  font-family: "Butler-Bold";
-  font-size: 1.5em;
+  font-family: "Butler-Medium";
+  font-size: 1.5vw;
   color: #787878;
   letter-spacing: 1.5px;
 }
@@ -38,12 +74,15 @@ font-size: 1em;
 color: #787878;
 letter-spacing: 0;
 position:relative;
+}
 
+#navbarNav li {
+  padding: 0px 10px;
 }
 
 .main-title{
   width:100%;
-  height:700px;
+  height:100vh;
   background-image: linear-gradient(150deg, #FEFEFE 45%, #E4E4E4 80%);
 }
 
@@ -193,8 +232,10 @@ left:15%;
 
 .bio{
   background-color: #EFEFEF;
-  width:100%;
+  width: 100vw;
+  height: 300vh;
   position:absolute;
+
 }
 
 .bio-intro{
@@ -228,7 +269,7 @@ top:55%;
 }
 #bio-background {
   position: relative;
-  top: 40%;
+  top: 50%;
   left: 40%;
   width: 60%;
   height: 60%;
@@ -249,7 +290,7 @@ top:55%;
 
 .bio-main{
   position:relative;
-  top:30px;
+  top:-225vh;
   max-width: 35%;
   right:10%;
 }
@@ -310,6 +351,7 @@ letter-spacing: 1.8px;
 
 .skills-h3 {
   position: relative;
+  top: 5vh;
   z-index: 5;
 }
 
@@ -362,12 +404,12 @@ background-image: radial-gradient(70% 60%, #FFFFFF 18%, #CECECE 100%);
   font-family: "Butler-Medium";
 color: #DEDEDE;
 letter-spacing: 1.2px;
-top: 140px;
+top: 22.5vh;
   z-index: 5;
 }
 
 .selected-works-h3 h3 {
-  font-size: 1.5em;
+  font-size: 1.5vw;
 }
 
 
@@ -458,8 +500,8 @@ top: 140px;
   background-color: rgba(234, 234, 234, .85);
   text-decoration: none;
   position: absolute;
-  top: 100px;
-  right: 900%;
+  top: 25vh;
+  right: 40vw;
   z-index: 5;
 }
 
@@ -469,8 +511,8 @@ top: 140px;
   width: 50px;
   background-color: rgba(234, 234, 234, .85);
   position: relative;
-  top: 100px;
-  left: 900%;
+  top: 25vh;
+  left: 40vw;
   z-index: 5;
 }
 
@@ -487,7 +529,7 @@ top: 140px;
 
 .inactive {
 width: 750px;
-height: 540px;
+height: 85vh;
 background: #EAEAEA;
 border: 4px solid #F9F9F9;
 visibility: visible;
@@ -513,7 +555,7 @@ letter-spacing: 1.7px;
 #inactive-main-text-right {
   position:relative;
   left: 100%;
-  bottom: 500px;
+  bottom: 65vh;
   left: 400px;
 }
 
@@ -526,13 +568,13 @@ letter-spacing: 1.7px;
 #inactive-side-text-left {
   position: relative;
   top: 25px;
-  left: 25px;
+  left: 50px;
 }
 
 #inactive-side-text-right {
   position: relative;
   top: 0px;
-  left: 650px;
+  left: 600px;
 
 }
 
@@ -554,9 +596,9 @@ letter-spacing: 1.7px;
 
 .active{
   display: "";
-  width: 70%;
-  height: 550px;
-  left: 15%;
+  width: 75vw;
+  height: 90vh;
+  left: 12.5%;
   /* Rectangle 2: */
   /* Rectangle 2: */
   opacity: 0.85;
@@ -579,12 +621,17 @@ letter-spacing: 1.7px;
 }
 
 .active #active-main-pic {
-  left: 58%;
-  top: -6%;
+  left: 40vw;
+  width: 20vw;
+  top: 10%;
   /* Dada Poster 1 Version 2 without background compressed: */
   box-shadow: 0 11px 11px 0 rgba(16,16,16,0.50);
   position:relative;
   z-index: 100px;
+}
+
+.active .active-main-pic-center {
+  width: 85%; top: 25vh; position: relative; box-shadow:0 11px 11px 0 rgba(0,0,0,0)
 }
 
 .active .active-text {
@@ -593,6 +640,7 @@ letter-spacing: 1.7px;
   text-align: center;
   top: 10%;
 }
+
 .active .active-text h2 {
   /* 27 Cafe: */
 font-family: Butler-Bold;
@@ -615,29 +663,46 @@ line-height: 20px;
 top: 50%;
 }
 
+.active .active-text-center {
+  position:relative;
+  width: 100%;
+  text-align: center;
+  top: 40%;
+}
+
+.active .active-text-center h2 {
+  /* 27 Cafe: */
+font-family: Butler-Bold;
+font-size: 3em;
+color: #393939;
+letter-spacing: 6px;
+}
+
+.active .active-text-center h3{
+  /* Branding Poster desi: */
+font-family: "BrandonGrotesque-Medium";
+font-size: .7em;
+color: #F4F4F4;
+letter-spacing: 2px;
+line-height: 20px;
+}
+
 .selected.active{
   display: "";
   visibility: visible;
 }
 
 .toggle {
-  position: relative;
-  top:85%;
-  z-index: 10;
-  width: 100%;
-  position:relative;
-  margin-left: 0px;
 
-  -webkit-transition: width 1s;
 }
 
 .slider {
   position:relative;
-  width: inherit;
-  height: 550px;
+  width: 75vw;
+  height: 100%;
   background-color: #f4f4f4;
-  top: -103%;
-  right: 0px;
+  top: -95vh;
+  left: 0;
 }
 
 .slider.opened {
@@ -709,7 +774,7 @@ max-height: 550px;
 .container-right {
   position: relative;
   left: 50%;
-  height: 550px;
+  height: 90vh;
   background-color: #ffffff;
   overflow: scroll;
 }
@@ -774,7 +839,7 @@ body { font-family: sans-serif; }
   /* art and illustration: */
 position: relative;
 font-family: "Butler-Medium";
-font-size: 1.4em;
+font-size: 2vw;
 color: #DEDEDE;
 letter-spacing: 4.1px;
 line-height: 23px;
@@ -866,15 +931,20 @@ text-align: center;
 
 .contact ul{
   position: relative;
-  top: 200px;
+  top: 33vh;
 }
+
 .contact li {
   display: inline-block;
-  padding-right: 60px;
   font-family: BrandonGrotesque-Medium;
 font-size: 1em;
 color: #787878;
 letter-spacing: 3.6px;
+padding: 0px 10px;
+}
+
+.contact-item{
+  padding-right: 0px;
 }
 
 .contact img {
