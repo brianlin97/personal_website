@@ -1,7 +1,7 @@
 html, body{
 max-width: 100%;
 height: 100%;
-font-family: "BrandonGrotesque", "Lato", "OpenSans";
+font-family: "BrandonGrotesque-Regular", "OpenSans";
 background-color: #EFEFEF;
 }
 
@@ -62,14 +62,14 @@ button:focus, input:focus{
 }
 
 .navbar-brand{
-  font-family: "Butler-Medium";
+  font-family: "Brandon Grotesque Medium";
   font-size: 1.5vw;
   color: #787878;
   letter-spacing: 1.5px;
 }
 
 #navbarNav{
-font-family: "BrandonGrotesque-Regular";
+font-family: "Brandon Grotesque Regular";
 font-size: 1em;
 color: #787878;
 letter-spacing: 0;
@@ -99,7 +99,7 @@ position:relative;
 
 
 #main-text-left{
-font-family: "BrandonGrotesque-Regular";
+font-family: "Brandon Grotesque Medium";
 font-size: .5em;
 color: #C1C1C1;
 letter-spacing: 1px;
@@ -114,7 +114,7 @@ left:15%;
 }
 
 #main-text-left-bottom{
-  font-family: "BrandonGrotesque-Light";
+  font-family: "Brandon Grotesque Medium";
   font-size:.5em;
   position:relative;
   left:6px;
@@ -123,10 +123,11 @@ left:15%;
 
 #coder{
   font-size:.70em;
+  font-weight: 600;
 }
 
 #main-text-right{
-  font-family: "Skia";
+  font-family: "Josefin Slab";
   font-size: .75em;
   color: #C1C1C1;
   letter-spacing: 0px;
@@ -134,9 +135,11 @@ left:15%;
   right:8%;
 }
 
+
+
 #main-text-right-bottom{
-  font-family: "Skia";
-  font-weight: 300;
+  font-family: "Josefin Slab";
+  font-weight: 600;
   font-size: .5em;
   color: #C1C1C1;
   letter-spacing: .25px;
@@ -146,10 +149,10 @@ left:15%;
 }
 
 #main-background{
-  height:85%;
+  height:90%;
   width:35%;
   position: relative;
-  top:5px;
+  top:20%;
   left:32%;
 }
 
@@ -157,7 +160,7 @@ left:15%;
   height:12%;
   position:relative;
   left:43%;
-  top:70px;
+  top:60%;
 }
 
 /*animation element*/
@@ -165,7 +168,7 @@ left:15%;
 .animation-element {
   position: relative;
   margin: 0% 1.33% 2.66% 1.33%;
-  height: 100%;
+
 }
 
 /*bounce up animation for the subject*/
@@ -232,9 +235,9 @@ left:15%;
 
 .bio{
   background-color: #EFEFEF;
-  width: 100vw;
-  height: 300vh;
-  position:absolute;
+  min-height: 2500px;
+  height: 250vh;
+  position:relative;
 
 }
 
@@ -246,20 +249,22 @@ left:15%;
 
 .bio-intro-h1 h2{
   /* hello! this is me.: */
-font-family: "Butler-Medium";
+font-family: "Josefin Slab";
 font-size: 5em;
 color: #393939;
 letter-spacing: 8px;
 line-height: 100px;
 position:relative;
-top:55%;
+right: 45%;
+font-weight: 800;
 }
 
 #bio-pic{
   height:auto;
+  width: 50%;
   max-width: 110%;
   position:relative;
-  left:50px;
+  left: 50%;
 }
 
 .parallax {
@@ -270,8 +275,8 @@ top:55%;
 #bio-background {
   position: relative;
   top: 50%;
-  left: 40%;
-  width: 60%;
+  left: 40vw;
+  width: 50vw;
   height: 60%;
 }
 
@@ -281,25 +286,25 @@ top:55%;
 }
 
 .bio-intro-h3 h3{
-  font-family:"Butler-Medium";
+  font-family:"Josefin Slab";
   font-size: 1.5em;
   letter-spacing: 2px;
   color:#393939;
   line-height: 35px;
+  font-weight: 600;
 }
 
 .bio-main{
   position:relative;
-  top:-225vh;
   max-width: 35%;
   right:10%;
 }
 
 .bio-main p{
-font-family: "BrandonGrotesque-Regular";
+font-family: "Brandon Grotesque Medium";
 font-size: 1.05em;
 color: #4B4B4B;
-letter-spacing: 0.3px;
+font-weight: 100;
 line-height: 27px;
 }
 
@@ -310,35 +315,43 @@ line-height: 27px;
 
 .bio-main-h3 h3{
   /* Basically, I take my: */
-font-family: "Butler-Medium";
+font-family: "Josefin Slab";
 font-size: 1.5;
 color: #393939;
 letter-spacing: 2px;
 line-height: 35px;
+font-weight: 600;
 }
 
 .awards-h3{
   position:relative;
-  top:100px;
+
   z-index: 5;
 }
 
 .awards-h3 h3{
   /* awards and recogniti: */
-font-family: Butler-Medium;
+font-family: "Alegreya";
+position: relative;
 font-size: 1.5em;
 color: #84CDB9;
 letter-spacing: 1.8px;
+z-index: 10;
+top: 7vh;
+font-weight: 500;
+
 }
 
 .awards-list{
   position:relative;
-  top:170px;
+  top:15vh;
+  padding-top: 20%;
+  padding-bottom: 20%;
 }
 
 .awards-list li{
   list-style: none;
-  font-family: "BrandonGrotesque-Light";
+  font-family: "Brandon Grotesque Regular";
   color:#393939;
   position:relative;
   right:40px;
@@ -357,10 +370,13 @@ letter-spacing: 1.8px;
 
 .skills-h3 h3{
   /* skills: */
-font-family: "Butler-Medium";
+font-family: "Alegreya";
 font-size: 1.5;
 color: #84CDB9;
 letter-spacing: 1.8px;
+position: relative;
+bottom: 6vh;
+z-index: 10;
 }
 
 .skills-list{
@@ -371,22 +387,43 @@ letter-spacing: 1.8px;
 
 .skills-list li{
   list-style: none;
-  font-family: "BrandonGrotesque-Light";
+  font-family: "Brandon Grotesque Regular";
   color:#393939;
-
 }
 
+#programs-list li{
+  font-family: "Brandon Grotesque Medium";
+  font-size: 1.2rem;
+}
+
+.awards-and-skills {
+  padding-top: 20%;
+}
+
+
+
 .selected-works{
-  position:absolute;
-  top:2600px;
+  position:relative;
   width:100%;
-  height:1000px;
-background-image: radial-gradient(70% 60%, #FFFFFF 18%, #CECECE 100%);
+  height: 150vh;
+  min-height: 1250px;
+  background-image: radial-gradient(70% 60%, #FFFFFF 18%, #CECECE 100%);
+  padding-top: 15%;
 }
 
 .selected-works-h3{
   position:relative;
   text-align: center;
+}
+
+.selected-works-h3 h3 {
+
+}
+
+#works_brush {
+  width:25vw; position:relative;
+  z-index: -10;
+  left: 3vw;
 }
 
 .wrapper{
@@ -401,21 +438,25 @@ background-image: radial-gradient(70% 60%, #FFFFFF 18%, #CECECE 100%);
 
 .selected-works-h3 {
   position: relative;
-  font-family: "Butler-Medium";
+  font-family: "Alegreya";
 color: #DEDEDE;
 letter-spacing: 1.2px;
-top: 22.5vh;
+top: 5vw;
   z-index: 5;
 }
 
 .selected-works-h3 h3 {
   font-size: 1.5vw;
+  position: absolute;
+  top: 35px;
+  left: 45vw;
+
 }
 
 
 #carousel {
   position: relative;
-  height: 800px;
+  height: 100vh;
   width:100%;
   top: 600px;
   left: 0;
@@ -643,7 +684,7 @@ letter-spacing: 1.7px;
 
 .active .active-text h2 {
   /* 27 Cafe: */
-font-family: Butler-Bold;
+font-family: "Josefin Slab";
 font-size: 3em;
 color: #393939;
 letter-spacing: 6px;
@@ -672,7 +713,8 @@ top: 50%;
 
 .active .active-text-center h2 {
   /* 27 Cafe: */
-font-family: Butler-Bold;
+font-family: "Josefin Slab";
+font-weight: 600;
 font-size: 3em;
 color: #393939;
 letter-spacing: 6px;
@@ -680,11 +722,13 @@ letter-spacing: 6px;
 
 .active .active-text-center h3{
   /* Branding Poster desi: */
-font-family: "BrandonGrotesque-Medium";
-font-size: .7em;
+font-family: "Brandon Grotesque Regular";
+font-size: 1em;
+font-weight: 800;
 color: #F4F4F4;
-letter-spacing: 2px;
-line-height: 20px;
+padding: 30px 0px;
+letter-spacing:3px;
+line-height: 2em;
 }
 
 .selected.active{
@@ -745,7 +789,7 @@ max-height: 550px;
 }
 
 .pancakes h2 {
-  font-family: "Butler-Medium";
+  font-family: "Josefin Slab";
   font-size: 3em;
   color: #393939;
 }
@@ -760,8 +804,8 @@ max-height: 550px;
 .pancakes p {
   position: relative;
 
-  font-family: "Lora";
-  font-size: .65em;
+  font-family: "Alegreya";
+  font-size: .85em;
   color:#393939;
   top: 10px;
   line-height: 18px;
@@ -780,7 +824,7 @@ max-height: 550px;
 }
 
 .container-right p{
-  font-family: "BrandonGrotesque-Regular";
+  font-family: "Brandon Grotesque Regular";
   font-size: .75em;
   line-height: 18px;
 }
@@ -830,16 +874,17 @@ body { font-family: sans-serif; }
 .grid {
   background: #EEE;
   max-width: 100%;
+  min-height: 1000px;
   position: relative;
-  top: 3050px;
+  top: 25%;
   padding-bottom: 200px;
 }
 
 .grid h3{
   /* art and illustration: */
 position: relative;
-font-family: "Butler-Medium";
-font-size: 2vw;
+font-family: "Alegreya";
+font-size: 1.5vw;
 color: #DEDEDE;
 letter-spacing: 4.1px;
 line-height: 23px;
@@ -849,9 +894,9 @@ bottom: 20px;
 }
 
 #illustrations-brush{
-  width: 30%;
+  width: 25vw;
   position:relative;
-  left: 38%;
+  left: 40%;
   bottom: 96px;
 }
 
@@ -875,6 +920,11 @@ bottom: 20px;
   background: #FFFFFF;
 }
 
+.grid-item img {
+  max-width: 100%;
+  overflow: hidden;
+}
+
 .grid-item--width2 { width:  40%; }
 .grid-item--width3 { width:  30%; }
 .grid-item--width4 { width:  60%; }
@@ -887,23 +937,29 @@ bottom: 20px;
   position: absolute;
   max-width: 100%;
   width: 100%;
-  top: 5400px;;
+  padding-top: 20%;
 }
 
-.interest img {
+.interest  {
   position: relative;
   left: 30%;
   width: 35%;
 }
 
+.interest img {
+  width: 35vw;
+}
+
+
 .interest h3{
   /* Interested? Say hi!: */
-position: relative;
-font-family: BrandonGrotesque-Medium;
-font-size: 1.2em;
+position: absolute;
+font-family: "BrandonGrotesque-Medium";
+font-size: 1.2vw;
 color: #DEDEDE;
 letter-spacing: 3px;
-bottom: 113px;
+bottom: 25%;
+margin-left: 40%;
 text-align: center;
 }
 
@@ -917,8 +973,8 @@ transform: translate(200%);
 .email p {
   /* brian.lin@wustl.edu: */
   position: relative;
-font-family: BrandonGrotesque-Medium;
-font-size: 1em;
+font-family: "Brandon Grotesque Regular";
+font-size: 1vw;
 color: #2B2B2B;
 letter-spacing: 3px;
 top: 14px;
@@ -936,8 +992,8 @@ text-align: center;
 
 .contact li {
   display: inline-block;
-  font-family: BrandonGrotesque-Medium;
-font-size: 1em;
+  font-family: "Brandon Grotesque Medium";
+font-size: 1vw;
 color: #787878;
 letter-spacing: 3.6px;
 padding: 0px 10px;
@@ -970,3 +1026,277 @@ padding: 0px 10px;
   overflow: hidden;
   transition: margin-left 666ms cubic-bezier(.666,0,.333,1), transform 666ms cubic-bezier(0.4, 0, 1, 1);
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 700px) {
+  /* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+    max-width: 100%;
+}
+
+[class*="grid-item--width"]
+{
+  width: 100%;
+}
+[class*="grid-item"]
+{
+  float:none;
+  width: 100%;
+  height: auto;
+}
+
+.art-thumbnail {
+  width: 100%;
+}
+
+#world-warm-3 {
+  display: none;
+}
+
+  body {
+    max-width: 100%;
+  }
+  .navbar {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  #navbarNav {
+    text-align: right;
+  }
+  .navbar-brand {
+      font-size: 5vw;
+  }
+  #main-text-left {
+    left: 0%;
+    top: 80px;
+  }
+  #main-text-left h1 {
+    font-size: 7vw;
+  }
+
+  #main-text-right {
+    text-align: right;
+    position: relative;
+    bottom: 1000px;
+    z-index: 10;
+  }
+
+  #main-text-right h1 {
+    font-size: 7vw;
+  }
+
+  #main-background {
+    top: -10%;
+  }
+
+  #bio-pic {
+    position: relative;
+    max-width: 100vw;
+    width: 100vw;
+    display: inline-block;
+    left:-70px;
+  }
+
+  .bio-intro-h1 h2 {
+    right: 0%;
+    font-size: 10vw;
+    letter-spacing: normal;
+  }
+
+  .bio-main {
+    max-width: 100%;
+    right: 0%;
+  }
+
+  #bio-background {
+    visibility: hidden;
+  }
+
+  #works_brush {
+    width: 70vw;
+    top: 100px;
+  }
+
+  #illustrations-brush {
+      width: 70vw;
+      left: 90px;
+  }
+
+  #illustrations {
+    bottom: 40px;
+    font-size: 1rem;
+  }
+
+  /* CAROUSEL */
+
+  .selected-works-h3 h3 {
+    font-size: 1rem;
+    left: 33%;
+    top: 125px;
+  }
+
+  .active #active-main-pic {
+    left: 0px;
+    width: 75vw;
+  }
+
+  .pancakes {
+    position:relative;
+  }
+
+  .container-right {
+    left: 0%;
+    top: 600px;
+  }
+
+
+  .slider {
+    position:relative;
+    width: 75vw;
+    height: 100%;
+    background-color: #f4f4f4;
+    top: -95vh;
+    left: 0;
+  }
+
+  .slider.opened {
+    /* visible */
+  -webkit-transform: translate(0, -100%);
+     -moz-transform: translate(0, -100%);
+      -ms-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+  }
+
+  .slider.closed {
+    /* completely offscreen */
+  -webkit-transform: translate(0, 0%);
+     -moz-transform: translate(0, 0%);
+      -ms-transform: translate(0,  0%);
+          transform: translate(0,  0%);
+  }
+
+  #next {
+    top: 5vh;
+    background-color: rgba(195, 195, 195, 0.85);
+  }
+
+  #prev {
+    top: 5vh;
+    background-color: rgba(195, 195, 195, 0.85);
+  }
+
+  .inside-content {
+    left: -2%;
+  }
+
+  .active {
+    overflow: hidden;
+  }
+
+  .active .active-text {
+    visibility: hidden;
+  }
+
+  .arrow {
+    width: 5vmin;
+    height: 5vmin;
+  }
+
+  .interest {
+  left: 12%;
+  width: 75%;
+  }
+
+  .interest img {
+    width: 70vw;
+  }
+
+  .interest h3 {
+    left: -15%;
+    font-size: .7rem;
+  }
+
+  .footer {
+    padding-top: 0px;
+  }
+  .email {
+    width: 70%;
+    transform: none;
+    position: relative;
+    margin-left: 15%;
+    margin-top: 50px;
+  }
+  .email p{
+    font-size: 1rem;
+  }
+  .contact ul {
+    top: 20vh;
+  }
+  .contact li {
+    font-size: .75rem;
+  }
+  .contact img {
+    width: 100%;
+  }
+
+  #cursor {
+    top: 30%;
+  }
+
+  .bio {
+    min-height: 2800px;
+  }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 701px; max-width: 1000px) {
+  .bio {
+    min-height: 3100px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 701px; max-width: 1400px) {
+  #carousel {
+    top: 850px;
+  }
+  #prev {
+    top: 0vh;
+    background-color: rgba(195, 195, 195, 0.85);
+  }
+  #next {
+    top: 0vh;
+    background-color: rgba(195, 195, 195, 0.85);
+  }
+  #works_brush {
+    width: 45vw;
+  }
+  .selected-works-h3 h3 {
+    font-size: 3vw;
+    left: 40vw;
+  }
+  #illustrations-brush {
+    width: 45vw;
+    left: 32%;
+  }
+  .selected-images img {
+    padding-top: 80px;
+  }
+  .grid h3 {
+    font-size: 3vw;
+  }
+  .pancakes p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}

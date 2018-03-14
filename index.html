@@ -11,7 +11,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alegreya|Josefin+Slab" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -23,10 +23,10 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light  navbar-transparent">
       <a class="navbar-brand" id="title-name" href="#">brian lin</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class=" navbar-collapse navbar-toggler-right" id="navbarNav">
+      <div class=" navbar-collapse navbar-toggler-right collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
 
           <li class="nav-item">
@@ -62,13 +62,14 @@
   <div class="bio">
     <div class="animation-element bounce-up cf">
       <div class="container bio-intro">
+        <div class="col">
+          <img id="bio-pic" src="images/bio-pic.jpg" alt="Portrait of me" class="image-fluid">
+        </div>
         <div class="row justify-content-md-center">
           <div class="col-6 bio-intro-h1">
             <h2>hello! <br> this is me.</h2>
           </div>
-          <div class="col">
-            <img id="bio-pic" src="images/bio-pic.jpg" alt="Portrait of me" class="image-fluid">
-          </div>
+
         </div>
         <div class="row">
           <div class="col bio-intro-h3">
@@ -93,14 +94,18 @@
         <div class-"col-md-5">
           <h3>Basically, I take my work seriously but not myself.</h3> <!--scrambled words animation-->
         </div>
+        <div class-"col-md-5">
+          <h3> <br>I also coded this website from scratch!</h3> <!--scrambled words animation-->
+        </div>
       </div>
 
 
       <div class="animation-element slide-left cf">
+        <div class="awards-and-skills">
         <div class="row awards-h3">
           <h3>awards and recognitions</h3>
+          <img src="images/bio_brush.png" style="width:70%; right:50%; position: absolute; z-index:0">
         </div>
-        <img src="images/bio_brush.png" style="width:70%; right:50%; position: absolute; z-index:0">
 
         <div class="row awards-list">
           <ul>
@@ -116,20 +121,37 @@
         <div class="skills">
           <div class="row skills-h3">
             <h3>skills</h3>
+            <img src="images/bio_brush_flipped.png" style="width:70%; right:60%; bottom:65%; position: absolute; z-index:0">
           </div>
-          <img src="images/bio_brush_flipped.png" style="width:70%; right:60%; bottom:65%; position: absolute; z-index:0">
 
           <div class="row skills-list">
+
+            <ul id="programs-list">
+              <li>I'm proficient in:</li>
+              <li>Adobe Creative Suites</li>
+              <li>Adobe Photoshop </li>
+              <li>Adobe Illustrator </li>
+              <li>Adobe InDesign </li>
+              <li>Adobe XD </li>
+              <li>Sketch </li>
+              <li>Java </li>
+              <li>JavaScript </li>
+              <li>HTML </li>
+              <li>CSS </li>
+            </ul>
+
             <ul>
-              <li>Knowledgeable in HTML/CSS/JS and front-end developement programs</li>
-              <li>Skilled in Adobe Creative Suites (Photoshop, Illustrator, InDesign)</li>
+              <li>Knowledgeable in front-end developement programs</li>
               <li>Able to create testable prototypes and design iterations to demonstrate and test ideas </li>
               <li>Able to communicate and work with a multidisciplinary team of software developers, visual designers, and creative content strategists</li>
               <li>Graphic designer and coder with a traditional drawing background</li>
             </ul>
+
           </div>
         </div>
+
       </div>
+    </div>
 
     </div>
   </div>
@@ -140,9 +162,9 @@
   <div class="selected-works" id="selected-works">
 
     <div class="selected-works-h3">
+      <img src="images/works_brush.png" id="works_brush">
       <h3>selected works</h3>
     </div>
-    <img src="images/works_brush.png" style="width:30%; left:38%; position:relative; top: 10vh">
 
 
     <main>
@@ -445,45 +467,45 @@
   <div class="grid-sizer"></div>
   <div class="grid-item grid-item--width2 grid-item--height2">
     <a href="images/drawing-2-final.jpg" data-toggle="lightbox" data-title="Attacked Dream">
-      <img src="images/drawing-2-final.jpg" alt="Drawing 2 Final" style="height:300px">
+      <img src="images/drawing-2-final.jpg" alt="Drawing 2 Final"  class="art-thumbnail">
     </a></div>
 
     <div class="grid-item grid-item--height2">
       <a href="images/work/artwork/90_years_young.jpg" data-toggle="lightbox" data-title="90 Years Young">
-        <img src="images/work/artwork/90_years_young.jpg" alt="90 Years Young" style="height:300px">
+        <img src="images/work/artwork/90_years_young.jpg" alt="90 Years Young"  class="art-thumbnail">
       </a> </div>
 
       <div class="grid-item grid-item--height2 ">
         <a href="images/work/artwork/daca_dreamers.jpg" data-toggle="lightbox" data-title="Daca Dreamers">
-          <img src="images/work/artwork/daca_dreamers.jpg" alt="DACA Dreamers" class="img-fluid"></a></div>
+          <img src="images/work/artwork/daca_dreamers.jpg" alt="DACA Dreamers" class="img-fluid" class="art-thumbnail"></a></div>
 
           <div class="grid-item grid-item--width2 grid-item--height4">
             <a href="images/work/artwork/the_negotiation.jpg" data-toggle="lightbox" data-title="The Negotiation">
-              <img src="images/work/artwork/the_negotiation.jpg" alt="The Negotiation" style="height:600px"></a></div>
+              <img src="images/work/artwork/the_negotiation.jpg" alt="The Negotiation"  class="art-thumbnail"></a></div>
 
               <div class="grid-item grid-item--height2">
                 <a href="images/work/artwork/waiting.jpg" data-toggle="lightbox" data-title="Waiting">
-                  <img src="images/work/artwork/waiting.jpg" alt="Waiting" style="height:300px">
+                  <img src="images/work/artwork/waiting.jpg" alt="Waiting"  class="art-thumbnail">
                 </a></div>
 
                 <div class="grid-item grid-item--height2">
-                  <a href="images/work/artwork/world_warm_3.jpg" data-toggle="lightbox" data-title="World Warm 3">
-                    <img src="images/work/artwork/world_warm_3.jpg" alt="World Warm 3" class="img-fluid">
+                  <a href="images/work/artwork/world_warm_3.jpg" data-toggle="lightbox" data-title="World Warm 3" id=world-warm-3>
+                    <img src="images/work/artwork/world_warm_3.jpg" alt="World Warm 3" class="img-fluid" class="art-thumbnail">
                   </div>
 
                   <div class="grid-item grid-item--height2">
                     <a href="images/work/artwork/neon_sunrise.jpg" data-toggle="lightbox" data-title="Waiting" >
-                      <img src="images/work/artwork/neon_sunrise.jpg" alt="Waiting" style="height:300px; width:384px"></a>
+                      <img src="images/work/artwork/neon_sunrise.jpg" alt="Neon Sunrise" class="art-thumbnail"></a>
                     </div>
 
 
                     <div class="grid-item grid-item--width2 grid-item--height2">
                       <a href="images/work/artwork/under_the_dome.jpg" data-toggle="lightbox" data-title="Under the Dome">
-                        <img src="images/work/artwork/under_the_dome.jpg" alt="Waiting" class="img-fluid"></a></div>
+                        <img src="images/work/artwork/under_the_dome.jpg" alt="Under the Dome" class="img-fluid" class="art-thumbnail"></a></div>
 
                         <div class="grid-item grid-item--width3">
-                          <a href="images/work/artwork/sketches.gif" data-toggle="lightbox" data-title="Legwork">
-                            <img src="images/work/artwork/sketches.gif" alt="Waiting" class="img-fluid"></div>
+                          <a href="images/work/artwork/sketches.gif" data-toggle="lightbox" data-title="Doodles">
+                            <img src="images/work/artwork/sketches.gif" alt="Doodles" class="img-fluid" class="art-thumbnail"></a></div>
 
                           </div>
 
